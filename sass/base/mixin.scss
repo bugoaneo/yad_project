@@ -5,19 +5,18 @@
 }
 
 @mixin land {
-    @media screen and (orientation:landscape) {
-        @content;
-    }
+  @media screen and (orientation: landscape) {
+    @content;
+  }
 }
 @mixin portret {
-    @media screen and (orientation:portrait) {
-      @content;
-    }
+  @media screen and (orientation: portrait) {
+    @content;
+  }
 }
 
-
 @function strip-unit($number) {
-  @if type-of($number) == 'number' and not unitless($number) {
+  @if type-of($number) == "number" and not unitless($number) {
     @return $number / ($number * 0 + 1);
   }
 
@@ -29,34 +28,32 @@
   $f-max: strip-unit($f-max);
   $w-min: strip-unit($w-min);
   $w-max: strip-unit($w-max);
-  
-  $k: ($f-max - $f-min)/($w-max - $w-min);
+
+  $k: ($f-max - $f-min)/ ($w-max - $w-min);
   $b: $f-min - $k * $w-min;
 
   $b: $b + $units;
 
-  @return calc( #{$k} * 100vw + #{$b} );
+  @return calc(#{$k} * 100vw + #{$b});
 }
 
-@mixin fluidFontSize($f-min, $f-max, $w-min, $w-max, $fallback: false) {
-  
+@mixin fFS($f-min, $f-max, $w-min, $w-max, $fallback: false) {
   font-size: $f-min;
-  
+
   @media (min-width: $w-min) {
     @if ($fallback) {
       font-size: $fallback;
     }
-    font-size: calcFluidFontSize($f-min, $f-max, $w-min, $w-max, px);  
+    font-size: calcFluidFontSize($f-min, $f-max, $w-min, $w-max, px);
   }
   @media (min-width: $w-max) {
     font-size: $f-max;
   }
 }
 
-
-@mixin arrow ($width, $height, $b-color) {
+@mixin arrow($width, $height, $b-color) {
   &:after {
-    content: '';
+    content: "";
     display: block;
     position: absolute;
     top: 50%;
@@ -66,7 +63,8 @@
     background: transparent;
     border-right: 2px solid $b-color;
     border-bottom: 2px solid $b-color;
-    transform: translateY(-50%) rotate(-45deg); }
+    transform: translateY(-50%) rotate(-45deg);
+  }
 }
 
 @mixin in-b($align: middle) {
@@ -74,22 +72,20 @@
   vertical-align: $align;
 }
 
-
-@mixin centered($axis: 'both') {
+@mixin center($axis: "both") {
   position: absolute;
-  @if ($axis == 'both') {
+  @if ($axis == "both") {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
 
-  @if $axis == 'x' {
+  @if $axis == "x" {
     left: 50%;
     transform: translateX(-50%);
   }
-  @if $axis == 'y' {
+  @if $axis == "y" {
     top: 50%;
     transform: translateY(-50%);
   }
 }
-

@@ -47,3 +47,13 @@ window.addEventListener('load', function () {
   //   }
   // });
 }, false);
+
+var moreBtn = document.querySelector(".menu__item--more"),
+hideBtn = document.querySelectorAll(".menu__item.hide");
+
+moreBtn.onclick = function() {
+hideBtn.forEach(function (item) {
+item.classList.toggle('hide');
+});
+this.classList.toggle('active');
+};

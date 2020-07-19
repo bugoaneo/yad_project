@@ -11,6 +11,9 @@
   align-items: center;
   justify-content: space-between;
  }
+  @include bp(800px) {
+    position: relative;
+  }
 }
 
 .logo {
@@ -62,6 +65,7 @@ font-size: 16px;
 .user__list {
 margin-left: auto;
 align-items: center;
+  flex: 0 0 auto;
 }
 
 .user__item {

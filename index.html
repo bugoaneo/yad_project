@@ -119,6 +119,12 @@ http://browsehappy.com/">обновите</a>
          d="M9.5 4a2 2 0 00-2 2v16c0 1.1.9 2 2 2h9a2 2 0 002-2V6a2 2 0 00-2-2h-9zm9 2h-9v16h9V6z" />
    <path d="M11.5 19h5v2h-5z" />
   </symbol>
+  <symbol viewBox="0 0 18 18" id="app-icon2" fill="currentColor">
+   <g transform="translate(-3.5, -3.5) scale (0.9)">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.5 4a2 2 0 00-2 2v16c0 1.1.9 2 2 2h9a2 2 0 002-2V6a2 2 0 00-2-2h-9zm9 2h-9v16h9V6z" />
+    <path d="M11.5 19h5v2h-5z" />
+   </g>
+  </symbol>
   <symbol id="search">
    <path d='M-1-1h24v24H-1z' fill='none' />
    <path fill='#aba9a6'
@@ -130,9 +136,8 @@ http://browsehappy.com/">обновите</a>
    </path>
    <path d="M0 16H18V18H0V16Z"></path>
   </symbol>
-  <symbol viewBox="0 0 18 18" id="zen-star">
-   <path
-         d="M17 9.24194V8.75806C14.1121 8.58296 12.478 8.20496 11.1214 6.87857C9.79504 5.52203 9.41704 3.88792 9.24194 1H8.75806C8.58296 3.88792 8.20496 5.52203 6.87857 6.87857C5.52203 8.20496 3.88792 8.58296 1 8.75806V9.24194C3.88792 9.41704 5.52203 9.79504 6.87857 11.1214C8.20496 12.478 8.58296 14.1121 8.75806 17H9.24194C9.41704 14.1121 9.79504 12.478 11.1214 11.1214C12.478 9.79504 14.1121 9.41704 17 9.24194Z">
+  <symbol viewBox="0 0 18 18" id="zen-star" fill="currentColor">
+   <path d="M17 9.24194V8.75806C14.1121 8.58296 12.478 8.20496 11.1214 6.87857C9.79504 5.52203 9.41704 3.88792 9.24194 1H8.75806C8.58296 3.88792 8.20496 5.52203 6.87857 6.87857C5.52203 8.20496 3.88792 8.58296 1 8.75806V9.24194C3.88792 9.41704 5.52203 9.79504 6.87857 11.1214C8.20496 12.478 8.58296 14.1121 8.75806 17H9.24194C9.41704 14.1121 9.79504 12.478 11.1214 11.1214C12.478 9.79504 14.1121 9.41704 17 9.24194Z">
    </path>
   </symbol>
   <symbol viewBox="0 0 20 20" id="notifer">
@@ -141,6 +146,9 @@ http://browsehappy.com/">обновите</a>
    </path>
    <path fill='#aba9a6' d="M10 20a3 3 0 0 0 3-3c0-1.657-1.5 0-3-17-1.5 17-3 15.343-3 17a3 3 0 0 0 3 3z">
    </path>
+  </symbol>
+  <symbol viewBox="0 0 18 18" fill="currentColor" id="icon-arrow">
+   <path d="M3 6L9 12L15 6" stroke-width="1"></path>
   </symbol>
  </svg>
  <div class="wrapper">
@@ -177,44 +185,46 @@ http://browsehappy.com/">обновите</a>
     <div class="menu">
      <h2 class="menu__title"><svg width="18" height="18" viewBox="0 0 18 18">
        <use xlink:href="#icon-feed-s--inline" /></svg> Лента</h2>
+     <hr class="menu__divider">
      <ul class="menu__list">
-      <li class="menu__item"><svg width="18" height="18" viewBox="0 0 18 18">
-        <use xlink:href="#zen-star" /></svg> кино
+      <li class="menu__item"><a href=""><svg width="18" height="18" viewBox="0 0 18 18">
+        <use xlink:href="#zen-star" /></svg> кино</a>
       </li>
-      <li class="menu__item"><svg width="18" height="18" viewBox="0 0 18 18">
-        <use xlink:href="#zen-star" /></svg> авто
+      <li class="menu__item"><a href=""><svg width="18" height="18" viewBox="0 0 18 18">
+        <use xlink:href="#zen-star" /></svg> авто</a>
       </li>
-      <li class="menu__item"><svg width="18" height="18" viewBox="0 0 18 18">
-        <use xlink:href="#zen-star" /></svg> наука
+      <li class="menu__item"><a href=""><svg width="18" height="18" viewBox="0 0 18 18">
+        <use xlink:href="#zen-star" /></svg> наука</a>
       </li>
-      <li class="menu__item"><svg width="18" height="18" viewBox="0 0 18 18">
-        <use xlink:href="#zen-star" /></svg> стиль
+      <li class="menu__item"><a href=""><svg width="18" height="18" viewBox="0 0 18 18">
+        <use xlink:href="#zen-star" /></svg> стиль</a>
       </li>
-      <li class="menu__item"><svg width="18" height="18" viewBox="0 0 18 18">
-        <use xlink:href="#zen-star" /></svg> спорт
+      <li class="menu__item"><a href=""><svg width="18" height="18" viewBox="0 0 18 18">
+        <use xlink:href="#zen-star" /></svg> спорт</a>
       </li>
-      <li class="menu__item"><svg width="18" height="18" viewBox="0 0 18 18">
-        <use xlink:href="#zen-star" /></svg> технологии
+      <li class="menu__item hide"><a href=""><svg width="18" height="18" viewBox="0 0 18 18">
+        <use xlink:href="#zen-star" /></svg> технологии</a>
       </li>
-      <li class="menu__item"><svg width="18" height="18" viewBox="0 0 18 18">
-        <use xlink:href="#zen-star" /></svg> путешествия
+      <li class="menu__item hide"><a href=""><svg width="18" height="18" viewBox="0 0 18 18">
+        <use xlink:href="#zen-star" /></svg> путешествия</a>
       </li>
-      <li class="menu__item"><svg width="18" height="18" viewBox="0 0 18 18">
-        <use xlink:href="#zen-star" /></svg> знаменитости
+      <li class="menu__item hide"><a href=""><svg width="18" height="18" viewBox="0 0 18 18">
+        <use xlink:href="#zen-star" /></svg> знаменитости</a>
       </li>
-      <li class="menu__item"><svg width="18" height="18" viewBox="0 0 18 18">
-        <use xlink:href="#zen-star" /></svg> финансы
+      <li class="menu__item hide"><a href=""><svg width="18" height="18" viewBox="0 0 18 18">
+        <use xlink:href="#zen-star" /></svg> финансы</a>
       </li>
-      <li class="menu__item"><svg width="18" height="18" viewBox="0 0 18 18">
-        <use xlink:href="#zen-star" /></svg> политика
+      <li class="menu__item hide"><a href=""><svg width="18" height="18" viewBox="0 0 18 18">
+        <use xlink:href="#zen-star" /></svg> политика</a>
       </li>
-      <li class="menu__item menu__item--more"> еще 5 интернесов</svg>
+      <li class="menu__item menu__item--more"><span > еще 5 интернесов</span>
       </li>
      </ul>
+     <hr class="menu__divider">
      <ul class="menu__sublist">
-      <li class="menu__subitem"><a href="">
-        <svg class="app-icon" width="28" height="31" viewBox="0 0 28 31">
-         <use xlink:href="#app-icon" /></svg>Скачать приложение</a>
+      <li class="menu__subitem icon"><a href="">
+        <svg class="app-icon"  height="20" viewBox="0 0 28 31">
+         <use xlink:href="#app-icon2" /></svg>Скачать приложение</a>
       </li>
       <li class="menu__subitem"><a href="">Рекламодателям</a></li>
       <li class="menu__subitem"><a href="">Все каналы платформы</a></li>
@@ -226,8 +236,8 @@ http://browsehappy.com/">обновите</a>
     <div class="content__header">
      <h1 class="content__title">Лента на основе ваших интересов</h1>
      <ul class="content__menu">
-      <li class="content__list active"><span>Все рекомендации</span></li>
-      <li class="content__list"><span>Только подписки</span></li>
+      <li class="content__item active"><span>Все рекомендации</span></li>
+      <li class="content__item"><span>Только подписки</span></li>
      </ul>
     </div>
     <div class="teaser__list">
@@ -402,7 +412,7 @@ http://browsehappy.com/">обновите</a>
      <!--  -->
      <a class="teaser__item">
       <div class="teaser__img">
-       <img class="teaser__pic" src="img/03.jpg" alt="">
+       <img class="teaser__pic" src="img/04.jpg" alt="">
        <div class="teaser__gradient item__gradient"></div>
       </div>
       <div class="teaser__content">
@@ -425,7 +435,7 @@ http://browsehappy.com/">обновите</a>
      </a>
      <a class="teaser__item">
       <div class="teaser__img">
-       <img class="teaser__pic" src="img/03.jpg" alt="">
+       <img class="teaser__pic" src="img/02.jpg" alt="">
        <div class="teaser__gradient item__gradient"></div>
       </div>
       <div class="teaser__content">
@@ -471,7 +481,7 @@ http://browsehappy.com/">обновите</a>
      </a>
      <a class="teaser__item teaser__item--big">
       <div class="teaser__img">
-       <img class="teaser__pic" src="img/03.jpg" alt="">
+       <img class="teaser__pic" src="img/01.jpg" alt="">
        <div class="teaser__gradient item__gradient"></div>
       </div>
       <div class="teaser__content">
